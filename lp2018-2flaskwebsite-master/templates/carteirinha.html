@@ -1,0 +1,26 @@
+{% extends "template.html" %}
+{% block conteudo %}
+        <table class="table table-striped table-responsive table-bordered">
+            <thead class="thead-default">
+                <tr>
+                    <th>Nome</th>
+                    <th>DRE</th>
+                    <th>CPF</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for usuario in lista %}
+                <tr>
+                    <td>{{ usuario.nome }}</td>
+                    <td>{{ usuario.cpf }}</td>
+                    <td>{{ usuario.dre }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+
+            <p><h1>Bem vindo! <a href="{{ link2 }}">Clique aqui para fazer Logout</a>  </h1></p>
+            <p>Para gerar sua Carteirinha clique <a href="{{ link }}">aqui</a>    </p>
+
+
+        </table>
+{% endblock %}
