@@ -1,22 +1,41 @@
-# UDP RECEIVE
-import socket
+import network
+
+ssid="<YOUR_SSID"
+password="YOUR_PASSWORD"
+
+def do_connect():
+    import network
+    sta_if = network.WLAN(network.STA_IF)
+    if not sta_if.isconnected():
+        print('connecting to network...')
+        sta_if.active(True)
+        sta_if.connect(ssid, password)
+        while not sta_if.isconnected():
+            pass
+    print('network config:', sta_if.ifconfig())
+
+do_connect()
+
+
+import usocket as socket
 import pickle
-import time
+import utime as time
 import select
 import random
 
 ################################################## PUBLISH #####################################################################
 
-import paho.mqtt.client as mqtt
+from umqtt.simple import MQTTClient
 
-mqttc = mqtt.Client()
-mqttc.connect("192.168.0.3", 1883)
+c = MQTTClient("","<MQTT_BROKER_IP>")
+c.connect()
 
 
 def publish_mqtt(node):
-    msg = str(time.asctime())
+    tempo = time.localtime()
+    msg = "Ano {} Mes {} Dia {} {}:{}:{} ".format(tempo[0],tempo[1],tempo[2],tempo[3],tempo[4],tempo[5])
     msg = msg + " Publicado por {}".format(node)
-    mqttc.publish("jpbrs/robotica", msg)
+    c.publish(b"<MQTT_BROKER_TOPIC", msg)
 
 
 ################################################################################################################################
@@ -30,7 +49,7 @@ sleeptime_plus2 = sleeptime * 2
 timeout_in_seconds = 10
 
 def dormir():
-    time.sleep(random.randint(sleeptime, sleeptime_plus2))
+    time.sleep(sleeptime+3)
 
 
 class Node():
@@ -44,8 +63,7 @@ class Node():
 
 
 
-        self.client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)  # UDP
-        self.client.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
+        self.client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self.client.bind(("", port_listen))
         self.client.settimeout(timeout_in_seconds)
         self.client.setblocking(False)
@@ -91,7 +109,7 @@ class Node():
 
     def check_watchdog(self): #Function to check if a node is unused
         t1 = (len(self.buffer)+1)*sleeptime_plus2
-        if(time.time()-self.watchdog)>(t1+random.randint(0,sleeptime_plus2)): #Random number of watch will avoid multiples sink node transmissing reverting message at same time.
+        if(time.time()-self.watchdog)>(t1+sleeptime): #Random number of watch will avoid multiples sink node transmissing reverting message at same time.
             for i in self.buffer:                                       #As time passes, the chances of not having simultaneity in the messages will be greater
                 if i[1] == 0:
                     print("Nó a ser removido após estouro de watchdog: {}".format(i))
@@ -110,20 +128,18 @@ class Node():
 
 
     def send_hello(self): #Function to send the first message at the initialization of a node
-        server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
-        server.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
+        server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         mensagem = pickle.dumps("H{}".format(self.number))
-        server.sendto(mensagem, ('<broadcast>', port_send))
+        server.sendto(mensagem, ('192.168.0.255', port_send))
 
 
         print("Node {} sent Hello".format(self.number))
 
 
     def send_ack(self, addr): #Function to respond a Hello message to the source
-        server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
-        server.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
+        server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         mensagem = pickle.dumps("A{}".format(self.number))
-        server.sendto(mensagem, ('<broadcast>', port_send))
+        server.sendto(mensagem, ('192.168.0.255', port_send))
 
 
         print("Node {} sent Ack to {}".format(self.number, addr))
@@ -133,10 +149,9 @@ class Node():
 
         publish_mqtt(self.number)
 
-        server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
-        server.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
+        server = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         mensagem = pickle.dumps("I{}".format(self.number))
-        server.sendto(mensagem, ('<broadcast>', port_send))
+        server.sendto(mensagem, ('192.168.0.255', port_send))
 
         print("Node {} sent reversor".format(self.number))
 
@@ -253,9 +268,9 @@ class Node():
                 dormir()
 
 def main():
-    Node1 = Node(1)
-    Node1.initialize_node()
-    Node1.main()
+    Node4 = Node(4)
+    Node4.initialize_node()
+    Node4.main()
 
 if __name__ == "__main__":
     main()
