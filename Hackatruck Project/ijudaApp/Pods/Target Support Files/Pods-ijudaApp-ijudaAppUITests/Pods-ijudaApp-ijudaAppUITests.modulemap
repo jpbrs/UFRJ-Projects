@@ -1,0 +1,6 @@
+framework module Pods_ijudaApp_ijudaAppUITests {
+  umbrella header "Pods-ijudaApp-ijudaAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

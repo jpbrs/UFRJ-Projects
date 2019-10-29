@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22BB061C7F693ACD68FA5BD7 /* Pods_ijudaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FD6E573B048F1DF5FA0713A /* Pods_ijudaApp.framework */; };
+		3F41145C2358880E00FC93A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F41145B2358880E00FC93A2 /* AppDelegate.swift */; };
+		3F41145E2358880E00FC93A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F41145D2358880E00FC93A2 /* ViewController.swift */; };
+		3F4114612358880E00FC93A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F41145F2358880E00FC93A2 /* Main.storyboard */; };
+		3F4114632358880F00FC93A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F4114622358880F00FC93A2 /* Assets.xcassets */; };
+		3F4114662358880F00FC93A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F4114642358880F00FC93A2 /* LaunchScreen.storyboard */; };
+		3F4114712358880F00FC93A2 /* ijudaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4114702358880F00FC93A2 /* ijudaAppTests.swift */; };
+		3F41147C2358880F00FC93A2 /* ijudaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F41147B2358880F00FC93A2 /* ijudaAppUITests.swift */; };
+		3F47DBDE235F276900D87365 /* NovoContatoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F47DBDD235F276900D87365 /* NovoContatoTableViewCell.swift */; };
+		3F47DBE0235F27AC00D87365 /* NovoContatoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F47DBDF235F27AC00D87365 /* NovoContatoTableViewController.swift */; };
+		3F47DBE2235F27F400D87365 /* NovosContato.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F47DBE1235F27F400D87365 /* NovosContato.swift */; };
+		3FA6B796235DE35500B9D796 /* ViewControllerNova.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6B795235DE35400B9D796 /* ViewControllerNova.swift */; };
+		3FBC4FC12359F97C008B0B0F /* Servico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC4FC02359F97C008B0B0F /* Servico.swift */; };
+		3FBC4FC32359F9F5008B0B0F /* ListaContatosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC4FC22359F9F5008B0B0F /* ListaContatosTableViewCell.swift */; };
+		3FBC4FC52359FAC9008B0B0F /* ListaContatoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBC4FC42359FAC9008B0B0F /* ListaContatoTableViewController.swift */; };
+		4F0F314D14DE22B3EE0A7CB9 /* Pods_ijudaAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5B4BA0D7889139198EDAC8 /* Pods_ijudaAppTests.framework */; };
+		AE96E1B092605E1A7B0A3955 /* Pods_ijudaApp_ijudaAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E054D30F39F61A635955CAE8 /* Pods_ijudaApp_ijudaAppUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F41146D2358880F00FC93A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F4114502358880E00FC93A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F4114572358880E00FC93A2;
+			remoteInfo = ijudaApp;
+		};
+		3F4114782358880F00FC93A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F4114502358880E00FC93A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F4114572358880E00FC93A2;
+			remoteInfo = ijudaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26526EB28B7712B3CCD7AF68 /* Pods-ijudaAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ijudaAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ijudaAppTests/Pods-ijudaAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D35BA9FC2FAB886178824FC /* Pods-ijudaApp-ijudaAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ijudaApp-ijudaAppUITests.release.xcconfig"; path = "Target Support Files/Pods-ijudaApp-ijudaAppUITests/Pods-ijudaApp-ijudaAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3F4114582358880E00FC93A2 /* ijudaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ijudaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F41145B2358880E00FC93A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F41145D2358880E00FC93A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F4114602358880E00FC93A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F4114622358880F00FC93A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F4114652358880F00FC93A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F4114672358880F00FC93A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F41146C2358880F00FC93A2 /* ijudaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ijudaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4114702358880F00FC93A2 /* ijudaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ijudaAppTests.swift; sourceTree = "<group>"; };
+		3F4114722358880F00FC93A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F4114772358880F00FC93A2 /* ijudaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ijudaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F41147B2358880F00FC93A2 /* ijudaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ijudaAppUITests.swift; sourceTree = "<group>"; };
+		3F41147D2358880F00FC93A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F47DBDD235F276900D87365 /* NovoContatoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovoContatoTableViewCell.swift; sourceTree = "<group>"; };
+		3F47DBDF235F27AC00D87365 /* NovoContatoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovoContatoTableViewController.swift; sourceTree = "<group>"; };
+		3F47DBE1235F27F400D87365 /* NovosContato.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovosContato.swift; sourceTree = "<group>"; };
+		3FA6B795235DE35400B9D796 /* ViewControllerNova.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerNova.swift; sourceTree = "<group>"; };
+		3FBC4FC02359F97C008B0B0F /* Servico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Servico.swift; path = ijudaModel/Servico.swift; sourceTree = SOURCE_ROOT; };
+		3FBC4FC22359F9F5008B0B0F /* ListaContatosTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListaContatosTableViewCell.swift; path = ijudaController/ListaContatosTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		3FBC4FC42359FAC9008B0B0F /* ListaContatoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListaContatoTableViewController.swift; path = ijudaController/ListaContatoTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		6FD6E573B048F1DF5FA0713A /* Pods_ijudaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ijudaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B7E9C396BB1A394E8F08195 /* Pods-ijudaAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ijudaAppTests.release.xcconfig"; path = "Target Support Files/Pods-ijudaAppTests/Pods-ijudaAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		CEF2319301BE66FB6B7E7065 /* Pods-ijudaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ijudaApp.debug.xcconfig"; path = "Target Support Files/Pods-ijudaApp/Pods-ijudaApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DC5B4BA0D7889139198EDAC8 /* Pods_ijudaAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ijudaAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E054D30F39F61A635955CAE8 /* Pods_ijudaApp_ijudaAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ijudaApp_ijudaAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8CE634EED9D910F44244F06 /* Pods-ijudaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ijudaApp.release.xcconfig"; path = "Target Support Files/Pods-ijudaApp/Pods-ijudaApp.release.xcconfig"; sourceTree = "<group>"; };
+		FE3F5A37E81BABAA16BC48F0 /* Pods-ijudaApp-ijudaAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ijudaApp-ijudaAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-ijudaApp-ijudaAppUITests/Pods-ijudaApp-ijudaAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F4114552358880E00FC93A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22BB061C7F693ACD68FA5BD7 /* Pods_ijudaApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4114692358880F00FC93A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F0F314D14DE22B3EE0A7CB9 /* Pods_ijudaAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4114742358880F00FC93A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE96E1B092605E1A7B0A3955 /* Pods_ijudaApp_ijudaAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F41144F2358880E00FC93A2 = {
+			isa = PBXGroup;
+			children = (
+				3F41148A23588EB400FC93A2 /* ijudaView */,
+				3F41148923588DCD00FC93A2 /* ijudaController */,
+				3F41145A2358880E00FC93A2 /* ijudaApp */,
+				3F41146F2358880F00FC93A2 /* ijudaAppTests */,
+				3F41147A2358880F00FC93A2 /* ijudaAppUITests */,
+				3F4114592358880E00FC93A2 /* Products */,
+				D0CF1C50807FF0CB222E44A6 /* Pods */,
+				BC55A138ABA5E4332304F49A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3F4114592358880E00FC93A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F4114582358880E00FC93A2 /* ijudaApp.app */,
+				3F41146C2358880F00FC93A2 /* ijudaAppTests.xctest */,
+				3F4114772358880F00FC93A2 /* ijudaAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F41145A2358880E00FC93A2 /* ijudaApp */ = {
+			isa = PBXGroup;
+			children = (
+				3F4114622358880F00FC93A2 /* Assets.xcassets */,
+				3F4114642358880F00FC93A2 /* LaunchScreen.storyboard */,
+				3F4114672358880F00FC93A2 /* Info.plist */,
+			);
+			path = ijudaApp;
+			sourceTree = "<group>";
+		};
+		3F41146F2358880F00FC93A2 /* ijudaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F4114702358880F00FC93A2 /* ijudaAppTests.swift */,
+				3F4114722358880F00FC93A2 /* Info.plist */,
+			);
+			path = ijudaAppTests;
+			sourceTree = "<group>";
+		};
+		3F41147A2358880F00FC93A2 /* ijudaAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F41147B2358880F00FC93A2 /* ijudaAppUITests.swift */,
+				3F41147D2358880F00FC93A2 /* Info.plist */,
+			);
+			path = ijudaAppUITests;
+			sourceTree = "<group>";
+		};
+		3F41148923588DCD00FC93A2 /* ijudaController */ = {
+			isa = PBXGroup;
+			children = (
+				3FA6B795235DE35400B9D796 /* ViewControllerNova.swift */,
+				3FBC4FC42359FAC9008B0B0F /* ListaContatoTableViewController.swift */,
+				3FBC4FC22359F9F5008B0B0F /* ListaContatosTableViewCell.swift */,
+				3F41145B2358880E00FC93A2 /* AppDelegate.swift */,
+				3F41145D2358880E00FC93A2 /* ViewController.swift */,
+				3F47DBDD235F276900D87365 /* NovoContatoTableViewCell.swift */,
+				3F47DBDF235F27AC00D87365 /* NovoContatoTableViewController.swift */,
+			);
+			path = ijudaController;
+			sourceTree = "<group>";
+		};
+		3F41148A23588EB400FC93A2 /* ijudaView */ = {
+			isa = PBXGroup;
+			children = (
+				3F41145F2358880E00FC93A2 /* Main.storyboard */,
+				3FBC4FC02359F97C008B0B0F /* Servico.swift */,
+				3F47DBE1235F27F400D87365 /* NovosContato.swift */,
+			);
+			path = ijudaView;
+			sourceTree = "<group>";
+		};
+		BC55A138ABA5E4332304F49A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FD6E573B048F1DF5FA0713A /* Pods_ijudaApp.framework */,
+				E054D30F39F61A635955CAE8 /* Pods_ijudaApp_ijudaAppUITests.framework */,
+				DC5B4BA0D7889139198EDAC8 /* Pods_ijudaAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0CF1C50807FF0CB222E44A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEF2319301BE66FB6B7E7065 /* Pods-ijudaApp.debug.xcconfig */,
+				E8CE634EED9D910F44244F06 /* Pods-ijudaApp.release.xcconfig */,
+				FE3F5A37E81BABAA16BC48F0 /* Pods-ijudaApp-ijudaAppUITests.debug.xcconfig */,
+				2D35BA9FC2FAB886178824FC /* Pods-ijudaApp-ijudaAppUITests.release.xcconfig */,
+				26526EB28B7712B3CCD7AF68 /* Pods-ijudaAppTests.debug.xcconfig */,
+				8B7E9C396BB1A394E8F08195 /* Pods-ijudaAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F4114572358880E00FC93A2 /* ijudaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F4114802358880F00FC93A2 /* Build configuration list for PBXNativeTarget "ijudaApp" */;
+			buildPhases = (
+				65DAEF3EE47F5A50CDA69FCD /* [CP] Check Pods Manifest.lock */,
+				3F4114542358880E00FC93A2 /* Sources */,
+				3F4114552358880E00FC93A2 /* Frameworks */,
+				3F4114562358880E00FC93A2 /* Resources */,
+				590838700B14E4717C6CE72B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ijudaApp;
+			productName = ijudaApp;
+			productReference = 3F4114582358880E00FC93A2 /* ijudaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F41146B2358880F00FC93A2 /* ijudaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F4114832358880F00FC93A2 /* Build configuration list for PBXNativeTarget "ijudaAppTests" */;
+			buildPhases = (
+				22C3C49F0E37CC6009DF7B9C /* [CP] Check Pods Manifest.lock */,
+				3F4114682358880F00FC93A2 /* Sources */,
+				3F4114692358880F00FC93A2 /* Frameworks */,
+				3F41146A2358880F00FC93A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F41146E2358880F00FC93A2 /* PBXTargetDependency */,
+			);
+			name = ijudaAppTests;
+			productName = ijudaAppTests;
+			productReference = 3F41146C2358880F00FC93A2 /* ijudaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F4114762358880F00FC93A2 /* ijudaAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F4114862358880F00FC93A2 /* Build configuration list for PBXNativeTarget "ijudaAppUITests" */;
+			buildPhases = (
+				12CA3110DF3D7B25D8F496E0 /* [CP] Check Pods Manifest.lock */,
+				3F4114732358880F00FC93A2 /* Sources */,
+				3F4114742358880F00FC93A2 /* Frameworks */,
+				3F4114752358880F00FC93A2 /* Resources */,
+				67FF25019690DE5FDED694FA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F4114792358880F00FC93A2 /* PBXTargetDependency */,
+			);
+			name = ijudaAppUITests;
+			productName = ijudaAppUITests;
+			productReference = 3F4114772358880F00FC93A2 /* ijudaAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F4114502358880E00FC93A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Student;
+				TargetAttributes = {
+					3F4114572358880E00FC93A2 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					3F41146B2358880F00FC93A2 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 3F4114572358880E00FC93A2;
+					};
+					3F4114762358880F00FC93A2 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 3F4114572358880E00FC93A2;
+					};
+				};
+			};
+			buildConfigurationList = 3F4114532358880E00FC93A2 /* Build configuration list for PBXProject "ijudaApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F41144F2358880E00FC93A2;
+			productRefGroup = 3F4114592358880E00FC93A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F4114572358880E00FC93A2 /* ijudaApp */,
+				3F41146B2358880F00FC93A2 /* ijudaAppTests */,
+				3F4114762358880F00FC93A2 /* ijudaAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F4114562358880E00FC93A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F4114662358880F00FC93A2 /* LaunchScreen.storyboard in Resources */,
+				3F4114632358880F00FC93A2 /* Assets.xcassets in Resources */,
+				3F4114612358880E00FC93A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F41146A2358880F00FC93A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4114752358880F00FC93A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12CA3110DF3D7B25D8F496E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ijudaApp-ijudaAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22C3C49F0E37CC6009DF7B9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ijudaAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		590838700B14E4717C6CE72B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ijudaApp/Pods-ijudaApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ijudaApp/Pods-ijudaApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ijudaApp/Pods-ijudaApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65DAEF3EE47F5A50CDA69FCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ijudaApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67FF25019690DE5FDED694FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ijudaApp-ijudaAppUITests/Pods-ijudaApp-ijudaAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ijudaApp-ijudaAppUITests/Pods-ijudaApp-ijudaAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ijudaApp-ijudaAppUITests/Pods-ijudaApp-ijudaAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F4114542358880E00FC93A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F47DBE0235F27AC00D87365 /* NovoContatoTableViewController.swift in Sources */,
+				3FBC4FC32359F9F5008B0B0F /* ListaContatosTableViewCell.swift in Sources */,
+				3FBC4FC52359FAC9008B0B0F /* ListaContatoTableViewController.swift in Sources */,
+				3F41145E2358880E00FC93A2 /* ViewController.swift in Sources */,
+				3F41145C2358880E00FC93A2 /* AppDelegate.swift in Sources */,
+				3FA6B796235DE35500B9D796 /* ViewControllerNova.swift in Sources */,
+				3F47DBDE235F276900D87365 /* NovoContatoTableViewCell.swift in Sources */,
+				3F47DBE2235F27F400D87365 /* NovosContato.swift in Sources */,
+				3FBC4FC12359F97C008B0B0F /* Servico.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4114682358880F00FC93A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F4114712358880F00FC93A2 /* ijudaAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F4114732358880F00FC93A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F41147C2358880F00FC93A2 /* ijudaAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F41146E2358880F00FC93A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F4114572358880E00FC93A2 /* ijudaApp */;
+			targetProxy = 3F41146D2358880F00FC93A2 /* PBXContainerItemProxy */;
+		};
+		3F4114792358880F00FC93A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F4114572358880E00FC93A2 /* ijudaApp */;
+			targetProxy = 3F4114782358880F00FC93A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F41145F2358880E00FC93A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F4114602358880E00FC93A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F4114642358880F00FC93A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F4114652358880F00FC93A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F41147E2358880F00FC93A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F41147F2358880F00FC93A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F4114812358880F00FC93A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEF2319301BE66FB6B7E7065 /* Pods-ijudaApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RBWLUHZ9U9;
+				INFOPLIST_FILE = ijudaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = teste.ijudaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F4114822358880F00FC93A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8CE634EED9D910F44244F06 /* Pods-ijudaApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RBWLUHZ9U9;
+				INFOPLIST_FILE = ijudaApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = teste.ijudaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3F4114842358880F00FC93A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26526EB28B7712B3CCD7AF68 /* Pods-ijudaAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ijudaAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = teste.ijudaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ijudaApp.app/ijudaApp";
+			};
+			name = Debug;
+		};
+		3F4114852358880F00FC93A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B7E9C396BB1A394E8F08195 /* Pods-ijudaAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ijudaAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = teste.ijudaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ijudaApp.app/ijudaApp";
+			};
+			name = Release;
+		};
+		3F4114872358880F00FC93A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE3F5A37E81BABAA16BC48F0 /* Pods-ijudaApp-ijudaAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ijudaAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = teste.ijudaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ijudaApp;
+			};
+			name = Debug;
+		};
+		3F4114882358880F00FC93A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D35BA9FC2FAB886178824FC /* Pods-ijudaApp-ijudaAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ijudaAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = teste.ijudaAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ijudaApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F4114532358880E00FC93A2 /* Build configuration list for PBXProject "ijudaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F41147E2358880F00FC93A2 /* Debug */,
+				3F41147F2358880F00FC93A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F4114802358880F00FC93A2 /* Build configuration list for PBXNativeTarget "ijudaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F4114812358880F00FC93A2 /* Debug */,
+				3F4114822358880F00FC93A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F4114832358880F00FC93A2 /* Build configuration list for PBXNativeTarget "ijudaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F4114842358880F00FC93A2 /* Debug */,
+				3F4114852358880F00FC93A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F4114862358880F00FC93A2 /* Build configuration list for PBXNativeTarget "ijudaAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F4114872358880F00FC93A2 /* Debug */,
+				3F4114882358880F00FC93A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F4114502358880E00FC93A2 /* Project object */;
+}
