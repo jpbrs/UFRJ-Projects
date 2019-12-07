@@ -1,7 +1,4 @@
-/*********
-  Modified from the examples of the Arduino LoRa library
-  More resources: https://randomnerdtutorials.com
-*********/
+
 
 #include <SPI.h>
 #include <LoRa.h>
