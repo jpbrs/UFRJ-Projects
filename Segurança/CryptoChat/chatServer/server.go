@@ -10,8 +10,10 @@ import (
 	"os"
 )
 
+// os codigos sao muito parecidos, olhar client.go para ver uma explicacao mais completa
+
 func main() {
-	listener, err := net.Listen("tcp", "127.0.0.1:8000")
+	listener, err := net.Listen("tcp", "127.0.0.1:8000") // cria um servidor que espera uma conexao na porta 8000 em localhost
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -21,7 +23,7 @@ func main() {
 			log.Print(err)
 			continue
 		}
-		go handleConn(conn)
+		go handleConn(conn) // para cada conexao cria uma thread
 		see_input(conn)
 	}
 }
